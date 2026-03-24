@@ -145,7 +145,7 @@ export default function ArtisanProfile() {
         </div>
 
         {/* ── DOUBLE CTA ── */}
-        <div className="fixed bottom-0 left-0 right-0 p-4 glass border-t border-white/5 max-w-lg mx-auto">
+        <div className="fixed bottom-20 left-0 right-0 p-4 glass border-t border-white/5 max-w-lg mx-auto">
           <div className="flex gap-3">
             {/* Discuter */}
             <button

@@ -97,7 +97,7 @@ export default function Chat() {
         </div>
 
         {/* Input */}
-        <div className="glass border-t border-white/5 px-4 py-3 flex items-center gap-3">
+<div className="glass border-t border-white/5 px-4 py-3 flex items-center gap-3 fixed bottom-20  left-0 right-0 max-w-lg mx-auto">
           <input
             type="text" value={input}
             onChange={e => setInput(e.target.value)}
