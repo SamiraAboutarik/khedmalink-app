@@ -33,7 +33,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <span className="text-2xl font-display font-800 tracking-tight">
-              <span className="text-teal">Khedma</span>
+              <span className="text-teal">Khdima</span>
               <span className="text-white">Link</span>
             </span>
           </Link>

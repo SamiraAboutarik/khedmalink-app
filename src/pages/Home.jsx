@@ -37,7 +37,7 @@ export default function Home() {
           <div>
             <p className="text-slate-400 text-sm">Bonjour {user?.name?.split(' ')[0] || 'là'} 👋</p>
             <h1 className="text-xl font-display font-bold text-white leading-tight">
-              Trouvez votre artisan<br/>
+              Trouvez votre prestataire de service<br/>
               <span className="text-teal">à Agadir</span>
             </h1>
           </div>
@@ -50,7 +50,7 @@ export default function Home() {
         {/* Location pill */}
         <div className="flex items-center gap-1.5 text-xs text-slate-400 mb-4 animate-fadeInUp anim-delay-1">
           <MapPin size={12} className="text-teal" />
-          <span>Agadir, Souss-Massa — <span className="text-brand-green">68 artisans disponibles</span></span>
+          <span>Agadir, Souss-Massa — <span className="text-brand-green">68 prestataires de service disponibles</span></span>
         </div>
 
         {/* Search bar */}
@@ -58,7 +58,7 @@ export default function Home() {
           <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" />
           <input
             type="text"
-            placeholder="Chercher un artisan..."
+            placeholder="Chercher un prestataire de service..."
             value={query}
             onChange={e => setQuery(e.target.value)}
             className="w-full glass rounded-xl pl-10 pr-4 py-3 text-sm text-white placeholder-slate-500
@@ -75,7 +75,7 @@ export default function Home() {
               ? 'gradient-orange text-white shadow-orange animate-pulse'
               : 'border border-brand-orange/40 text-brand-orange hover:bg-brand-orange/10'}`}>
           <Zap size={16} fill={urgencyMode ? 'currentColor' : 'none'} />
-          {urgencyMode ? '🚨 Mode urgence activé — recherche en cours...' : 'Besoin d\'un artisan maintenant ⚡'}
+          {urgencyMode ? '🚨 Mode urgence activé — recherche en cours...' : 'Besoin d\'un prestataire de service maintenant ⚡'}
         </button>
 
         {/* Categories */}
@@ -100,7 +100,7 @@ export default function Home() {
             <h2 className="text-sm font-semibold text-slate-300 animate-fadeInUp anim-delay-4">
               {activeCategory
                 ? `${categories.find(c => c.id === activeCategory)?.label}s`
-                : 'Artisans près de vous'}
+                : 'prestataires de service près de vous'}
             </h2>
             <span className="text-xs text-slate-500">{filtered.length} trouvés</span>
           </div>
@@ -108,7 +108,7 @@ export default function Home() {
           {filtered.length === 0 ? (
             <div className="glass rounded-2xl p-8 text-center animate-fadeInUp">
               <p className="text-4xl mb-2">🔍</p>
-              <p className="text-slate-400 text-sm">Aucun artisan trouvé</p>
+              <p className="text-slate-400 text-sm">Aucun prestataire de service trouvé</p>
             </div>
           ) : (
             <div className="space-y-3">

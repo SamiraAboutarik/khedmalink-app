@@ -44,7 +44,7 @@ export default function Login() {
         {/* Logo */}
         <div className="text-center mb-7 animate-fadeInUp">
           <h1 className="text-3xl font-display font-extrabold">
-            <span className="text-teal">Khedma</span><span className="text-white">Link</span>
+            <span className="text-teal">Khdima</span><span className="text-white">Link</span>
           </h1>
           <p className="text-slate-400 text-sm mt-2">{t.appTagline}</p>
         </div>

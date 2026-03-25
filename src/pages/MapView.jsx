@@ -55,7 +55,7 @@ export default function MapView() {
         <div className="px-4 pt-4 pb-2">
           <div className="flex items-center justify-between mb-1">
             <h1 className="text-lg font-display font-bold text-white">
-              Artisans sur la carte
+              prestataire de services sur la carte
             </h1>
             <button
               onClick={() => setShowFilters(v => !v)}
@@ -70,7 +70,7 @@ export default function MapView() {
           </div>
           <p className="text-xs text-slate-400">
             <Navigation size={10} className="inline text-teal mr-1" />
-            Agadir, Souss-Massa — {filtered.length} artisans
+            Agadir, Souss-Massa — {filtered.length} prestataires de service
           </p>
         </div>
 
