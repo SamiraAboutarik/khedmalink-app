@@ -8,7 +8,7 @@ export const T = {
     dir: 'ltr',
     appTagline: 'Services à domicile au Maroc 🇲🇦',
     iam_client: 'Je suis client',
-    iam_artisan: 'Je suis artisan',
+    iam_artisan: 'Je suis prestataire de service',
     login: 'Connexion',
     signup: 'Inscription',
     phone: 'Numéro de téléphone',
